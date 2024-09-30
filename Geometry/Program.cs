@@ -12,7 +12,7 @@ namespace Geometry
 		{
 			int n;
 
-			// 1) Прямоугольник n x n
+			// 1) Прямоугольник:
 			Console.Write("Введите размер для фигуры 1: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n1)");
@@ -25,7 +25,7 @@ namespace Geometry
 				Console.WriteLine();
 			}
 
-			// 2) Треугольник слева направо
+			// 2) Треугольник слева направо:
 			Console.Write("Введите размер для фигуры 2: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n2)");
@@ -38,7 +38,7 @@ namespace Geometry
 				Console.WriteLine();
 			}
 
-			// 3) Обратный треугольник
+			// 3) Обратный треугольник:
 			Console.Write("Введите размер для фигуры 3: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n3)");
@@ -51,7 +51,7 @@ namespace Geometry
 				Console.WriteLine();
 			}
 
-			// 4) Смещенный вправо треугольник
+			// 4) Смещенный вправо треугольник:
 			Console.Write("Введите размер для фигуры 4: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n4)");
@@ -68,7 +68,7 @@ namespace Geometry
 				Console.WriteLine();
 			}
 
-			// 5) Смещенный влево треугольник
+			// 5) Смещенный влево треугольник:
 			Console.Write("Введите размер для фигуры 5: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n5)");
@@ -85,7 +85,7 @@ namespace Geometry
 				Console.WriteLine();
 			}
 
-			// 6) Ромб
+			// 6) Ромбик:
 			Console.Write("Введите размер для фигуры 6: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n6)");
@@ -117,7 +117,7 @@ namespace Geometry
 				Console.WriteLine();
 			}
 
-			// 7) Шахматная доска
+			// 7) Шахматная доска:
 			Console.Write("Введите размер для фигуры 7: ");
 			n = int.Parse(Console.ReadLine());
 			Console.WriteLine("\n7)");
