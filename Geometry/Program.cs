@@ -24,7 +24,6 @@ namespace Geometry
 				}
 				Console.WriteLine();
 			}
-
 			// 2) Треугольник слева направо:
 			Console.Write("Введите размер для фигуры 2: ");
 			n = int.Parse(Console.ReadLine());
@@ -37,7 +36,6 @@ namespace Geometry
 				}
 				Console.WriteLine();
 			}
-
 			// 3) Обратный треугольник:
 			Console.Write("Введите размер для фигуры 3: ");
 			n = int.Parse(Console.ReadLine());
@@ -50,7 +48,6 @@ namespace Geometry
 				}
 				Console.WriteLine();
 			}
-
 			// 4) Смещенный вправо треугольник:
 			Console.Write("Введите размер для фигуры 4: ");
 			n = int.Parse(Console.ReadLine());
@@ -67,7 +64,6 @@ namespace Geometry
 				}
 				Console.WriteLine();
 			}
-
 			// 5) Смещенный влево треугольник:
 			Console.Write("Введите размер для фигуры 5: ");
 			n = int.Parse(Console.ReadLine());
@@ -84,7 +80,6 @@ namespace Geometry
 				}
 				Console.WriteLine();
 			}
-
 			// 6) Ромбик:
 			Console.Write("Введите размер для фигуры 6: ");
 			n = int.Parse(Console.ReadLine());
@@ -102,7 +97,6 @@ namespace Geometry
 				Console.Write("\\");     // Правая часть ромба
 				Console.WriteLine();
 			}
-
 			// Нижняя часть ромба
 			for (int i = 0; i < n; i++)
 			{
@@ -116,7 +110,6 @@ namespace Geometry
 				Console.Write("/");      // Правая часть ромба
 				Console.WriteLine();
 			}
-
 			// 7) Шахматная доска:
 			Console.Write("Введите размер для фигуры 7: ");
 			n = int.Parse(Console.ReadLine());
