@@ -12,9 +12,9 @@ namespace Chessboard
 		{
 			Console.Write("Введите размер доски: ");
 			int boardSize = int.Parse(Console.ReadLine());
-
-			int cellSize = 5;
-			// Построение шахматной доски
+			Console.Write("Введите размер клетки: ");
+			int cellSize = int.Parse(Console.ReadLine());
+			
 			for (int row = 0; row < boardSize; row++)
 			{
 				for (int cellRow = 0; cellRow < cellSize; cellRow++) // количество строк в одной клетке
