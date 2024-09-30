@@ -20,7 +20,7 @@ namespace Geometry
 			{
 				for (int j = 0; j < n; j++)
 				{
-					Console.Write("*");
+					Console.Write("* ");
 				}
 				Console.WriteLine();
 			}
@@ -33,7 +33,7 @@ namespace Geometry
 			{
 				for (int j = 0; j < i; j++)
 				{
-					Console.Write("*");
+					Console.Write("* ");
 				}
 				Console.WriteLine();
 			}
@@ -46,7 +46,7 @@ namespace Geometry
 			{
 				for (int j = 0; j < i; j++)
 				{
-					Console.Write("*");
+					Console.Write("* ");
 				}
 				Console.WriteLine();
 			}
@@ -59,11 +59,11 @@ namespace Geometry
 			{
 				for (int j = n; j > i; j--)
 				{
-					Console.Write(" ");
+					Console.Write("  ");
 				}
 				for (int k = 0; k < i; k++)
 				{
-					Console.Write("*");
+					Console.Write("* ");
 				}
 				Console.WriteLine();
 			}
@@ -76,11 +76,11 @@ namespace Geometry
 			{
 				for (int j = n; j > i; j--)
 				{
-					Console.Write(" ");
+					Console.Write("  ");
 				}
 				for (int k = 0; k < i; k++)
 				{
-					Console.Write("*");
+					Console.Write("* ");
 				}
 				Console.WriteLine();
 			}
