@@ -68,38 +68,25 @@ namespace Chessboard_HARD
 		{
 			// Рисуем верхнюю рамку
 			Console.Write(UP_LEFT_ANGLE);
-			for (int i = 0; i < n * 4; i++)  // Увеличиваем количество символов для широкой рамки
-			{
-				Console.Write(HORIZONT_LINE);
-			}
+			Console.Write(new string(HORIZONT_LINE, n * 4));
 			Console.WriteLine(UP_RIGHT_ANGLE);
 			// Рисуем шахматные клетки
 			for (int i = 0; i < n; i++)
 			{
-				for (int k = 0; k < 2; k++)  // Увеличиваем высоту каждой клетки до 2 строк
+				for (int k = 0; k < 2; k++) // Увеличиваем высоту каждой клетки до 2 строк
 				{
 					Console.Write(VERTICAL_LINE); // Левая вертикальная рамка
 					for (int j = 0; j < n; j++)
 					{
 						// Чередуем черные и белые клетки
-						if ((i + j) % 2 == 0)
-						{
-							Console.Write(WHITE_BOX); // Белая клетка
-						}
-						else
-						{
-							Console.Write(BLACK_BOX); // Черная клетка
-						}
+						Console.Write((i + j) % 2 == 0 ? WHITE_BOX : BLACK_BOX);
 					}
 					Console.WriteLine(VERTICAL_LINE); // Правая вертикальная рамка
 				}
 			}
 			// Рисуем нижнюю рамку
 			Console.Write(LOW_LEFT_ANGLE);
-			for (int i = 0; i < n * 4; i++)  // Увеличиваем количество символов для широкой рамки
-			{
-				Console.Write(HORIZONT_LINE);
-			}
+			Console.Write(new string(HORIZONT_LINE, n * 4));
 			Console.WriteLine(LOW_RIGHT_ANGLE);
 		}
 	}
