@@ -37,10 +37,6 @@ namespace DataTypes
 			Console.WriteLine(decimal.MaxValue);
 			Console.WriteLine(delimiter);
 
-			//Console.WriteLine(5.GetType());
-			//Console.WriteLine(5.0.GetType());
-			//Console.WriteLine(5.0m.GetType());
-			//Console.WriteLine(5.0f.GetType());
 			//Console.WriteLine(5ul.GetType());
 
 			int a = 2000000000;
@@ -51,8 +47,10 @@ namespace DataTypes
 			}
 			catch (Exception ex)
 			{
+
 				Console.WriteLine(ex.Message);
 			}
+			Console.WriteLine("Вот и сказочке конец");
 		}
 	}
 }
