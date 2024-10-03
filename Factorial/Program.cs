@@ -1,5 +1,5 @@
-﻿//#define DECIMAL
-#define BIG_INTEGER
+﻿#define DECIMAL
+//#define BIG_INTEGER
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,6 +1,5 @@
 ﻿//#define CALC_1
 #define CALC_2
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -124,15 +123,9 @@ namespace Calculator
 					double result = 0;
 					switch (operation)
 					{
-						case '+':
-							result = num1 + num2;
-							break;
-						case '-':
-							result = num1 - num2;
-							break;
-						case '*':
-							result = num1 * num2;
-							break;
+						case '+': result = num1 + num2; break;
+						case '-': result = num1 - num2; break;
+						case '*': result = num1 * num2; break;
 						case '/':
 							if (num2 != 0)
 							{
