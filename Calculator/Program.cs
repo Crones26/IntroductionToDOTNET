@@ -1,5 +1,5 @@
-﻿#define CALC_1
-//#define CALC_2
+﻿//#define CALC_1
+#define CALC_2
 
 using System;
 using System.Collections.Generic;

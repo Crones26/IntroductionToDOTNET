@@ -59,7 +59,7 @@ namespace Factorial
 #if BIG_INTEGER
 			do
 			{
-				Console.Write("Введите число (0 или больше): ");
+				Console.Write("Введите число: ");
 
 				if (int.TryParse(Console.ReadLine(), out number))
 				{
