@@ -8,25 +8,21 @@ namespace Snake
 		{
 			int x = 10, y = 10; // начальные координаты курсора
 			ConsoleKey key;
-
 			// Скрываем курсор
 			Console.CursorVisible = false;
-
 			try
 			{
 				do
 				{
 					Console.Clear();
 					Console.SetCursorPosition(x, y);
-					Console.Write("X"); // "курсор" в виде символа "X"
-
+					Console.Write("X");
 					key = Console.ReadKey(true).Key;
-
 					switch (key)
 					{
 						case ConsoleKey.W:
 						case ConsoleKey.UpArrow:
-							y = Math.Max(0, y - 1); // двигаем курсор вверх
+							y = Math.Max(0, y - 1); // вверх
 							break;
 						case ConsoleKey.S:
 						case ConsoleKey.DownArrow:
