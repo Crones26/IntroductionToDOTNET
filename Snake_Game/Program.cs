@@ -153,7 +153,7 @@ namespace Snake_Game
 			Console.SetCursorPosition(snakeX[0], snakeY[0]);
 			Console.Write("X");
 
-			// Отображаем тело змейки как квадратики
+			// Отображаем тело змейки 
 			for (int i = 1; i < snakeX.Count; i++)
 			{
 				Console.SetCursorPosition(snakeX[i], snakeY[i]);
