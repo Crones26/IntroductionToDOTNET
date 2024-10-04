@@ -149,7 +149,7 @@ namespace Snake_Game
 				snakeY.RemoveAt(snakeY.Count - 1);
 			}
 
-			// Отображаем голову змейки квадратиком
+			// Отображаем голову змейки
 			Console.SetCursorPosition(snakeX[0], snakeY[0]);
 			Console.Write("X");
 
