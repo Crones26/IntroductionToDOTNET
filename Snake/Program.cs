@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Snake
 {
-	class Program
+	internal class Program
 	{
 		static void Main(string[] args)
 		{
@@ -10,40 +14,39 @@ namespace Snake
 			ConsoleKey key;
 			// Скрываем курсор
 			Console.CursorVisible = false;
-			try
+			// Устанавливаем начальное положение курсора и рисуем первый "X"
+			Console.SetCursorPosition(x, y);
+			Console.Write("X");
+			do
 			{
-				do
+				key = Console.ReadKey(true).Key;
+				// Убираем старый "X"
+				Console.SetCursorPosition(x, y);
+				Console.Write(" ");
+				// Перемещаем курсор в зависимости от нажатой клавиши, следя за границами окна
+				switch (key)
 				{
-					Console.Clear();
-					Console.SetCursorPosition(x, y);
-					Console.Write("X");
-					key = Console.ReadKey(true).Key;
-					switch (key)
-					{
-						case ConsoleKey.W:
-						case ConsoleKey.UpArrow:
-							y = Math.Max(0, y - 1); // вверх
-							break;
-						case ConsoleKey.S:
-						case ConsoleKey.DownArrow:
-							y = Math.Min(Console.WindowHeight - 1, y + 1); // вниз
-							break;
-						case ConsoleKey.A:
-						case ConsoleKey.LeftArrow:
-							x = Math.Max(0, x - 1); // влево
-							break;
-						case ConsoleKey.D:
-						case ConsoleKey.RightArrow:
-							x = Math.Min(Console.WindowWidth - 1, x + 1); // вправо
-							break;
-					}
-				} while (key != ConsoleKey.Escape); // программа завершится при нажатии Escape
-			}
-			finally
-			{
-				// Возвращаем видимость курсора
-				Console.CursorVisible = true;
-			}
+					case ConsoleKey.UpArrow:
+					case ConsoleKey.W: if (y > 0) y--;
+						break;
+
+					case ConsoleKey.DownArrow:
+					case ConsoleKey.S: if (y < Console.WindowHeight - 1) y++;
+						break;
+
+					case ConsoleKey.LeftArrow:
+					case ConsoleKey.A: if (x > 1) x -= 2;
+						break;
+
+					case ConsoleKey.RightArrow:
+					case ConsoleKey.D: if (x < Console.WindowWidth - 2) x += 2;
+						break;
+				}
+				// Рисуем "X" на новой позиции
+				Console.SetCursorPosition(x, y);
+				Console.Write("X");
+
+			} while (key != ConsoleKey.Escape); // программа завершится при нажатии Escape
 		}
 	}
 }
