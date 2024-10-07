@@ -40,19 +40,13 @@ namespace Arrays
 			// }
 			// Console.WriteLine();
 
-			// Находим сумму, среднее-арифметическое, минимальное и максимальное значение
-			int sum1D = arr.Sum();
-			double avg1D = arr.Average();
-			int min1D = arr.Min();
-			int max1D = arr.Max();
-
 			Array.Sort(arr);
 
 			Console.WriteLine(delimiter);
-			Console.WriteLine($"Сумма: {sum1D}");
-			Console.WriteLine($"Среднее арифметическое: {avg1D}");
-			Console.WriteLine($"Минимальное значение: {min1D}");
-			Console.WriteLine($"Максимальное значение: {max1D}");
+			Console.WriteLine($"Сумма: {arr.Sum()}");
+			Console.WriteLine($"Среднее арифметическое: {arr.Average()}");
+			Console.WriteLine($"Минимальное значение: {arr.Min()}");
+			Console.WriteLine($"Максимальное значение: {arr.Max()}");
 			Console.WriteLine("Отсортированный массив:");
 			foreach (var item in arr)
 			{
@@ -71,7 +65,7 @@ namespace Arrays
 
 			int[,] i_arr_2 = new int[rows, cols];
 
-			Console.WriteLine(i_arr_2.Rank);
+			//Console.WriteLine(i_arr_2.Rank);
 
 			for (int i = 0; i < i_arr_2.GetLength(0); i++)
 			{
