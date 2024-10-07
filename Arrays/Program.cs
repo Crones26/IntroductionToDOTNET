@@ -140,7 +140,7 @@ namespace Arrays
 			Console.WriteLine($"Среднее арифметическое: {avgJagged}");
 			Console.WriteLine($"Минимальное значение: {minJagged}");
 			Console.WriteLine($"Максимальное значение: {maxJagged}");
-			Console.WriteLine("Отсортированный зубчатый массив:");
+			Console.WriteLine("Отсортированный зубастый массив:");
 			for (int i = 0; i < sortedJagged.Length; i++)
 			{
 				Console.Write(sortedJagged[i] + "\t");
