@@ -147,7 +147,6 @@ namespace Arrays
 			Console.WriteLine($"Минимальное значение: {minJagged}");
 			Console.WriteLine($"Максимальное значение: {maxJagged}");
 			Console.WriteLine("Отсортированный зубчатый массив:");
-			Console.WriteLine(delimiter);
 			for (int i = 0; i < sortedJagged.Length; i++)
 			{
 				Console.Write(sortedJagged[i] + "\t");
