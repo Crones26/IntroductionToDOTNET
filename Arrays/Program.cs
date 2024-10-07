@@ -66,7 +66,6 @@ namespace Arrays
 				}
 				Console.WriteLine();
 			}
-
 			foreach (int i in i_arr_2)
 			{
 				Console.Write(i + "\t");
